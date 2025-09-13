@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Nonprofit Pricing</title>
+    <style>
+        body {
+            background: #f5f7fa;
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #234;
+        }
+        .centered {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 36px;
+            font-size: 2.5em;
+            font-weight: 400;
+        }
+        .pricing-table {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 8px 32px rgba(35,54,93,0.10);
+            width: 92vw;
+            max-width: 980px;
+            margin: 0 auto 60px auto;
+            overflow-x: auto;
+        }
+        .plan-header-row {
+            display: flex;
+            border-bottom: 1px solid #e4e8ec;
+            padding-top: 28px;
+            padding-bottom: 16px;
+        }
+        .plan-header {
+            flex: 1;
+            text-align: center;
+            padding: 0 0;
+        }
+        .plan-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #234;
+        }
+        .plan-desc {
+            font-size: 1em;
+            color: #567;
+            margin-bottom: 20px;
+        }
+        .plan-action {
+            background: #1d8ce0;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 1em;
+            font-weight: 500;
+            padding: 10px 28px;
+            margin-bottom: 10px;
+            display: block;
+            cursor: pointer;
+        }
+        .plan-link {
+            display: block;
+            color: #1d8ce0;
+            background: none;
+            border: none;
+            font-size: .95em;
+            text-decoration: underline;
+            margin-top: 4px;
+            margin-bottom: 0;
+            cursor: pointer;
+        }
+        .compare-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 0;
+        }
+        .compare-table th, .compare-table td {
+            padding: 14px 8px;
+            text-align: center;
+            border-bottom: 1px solid #e4e8ec;
+            font-size: 1em;
+            vertical-align: middle;
+        }
+        .compare-table th {
+            background: #f5f7fa;
+            color: #234;
+            font-weight: bold;
+            font-size: 1.05em;
+            border-bottom: 2px solid #dde1e6;
+            text-align: left;
+        }
+        .compare-table td {
+            background: #fff;
+            color: #234;
+        }
+        .feature-title {
+            text-align: left;
+            font-weight: 500;
+        }
+        .check {
+            color: #2cc194;
+            font-size: 1.35em;
+        }
+        .compare-table tr:last-child td,
+        .compare-table tr:last-child th {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="centered">Simple nonprofit pricing</div>
+    <div class="pricing-table">
+        <div class="plan-header-row">
+            <div class="plan-header">
+                <div class="plan-title">GoFundMe</div>
+                <div class="plan-desc">Quick and easy online crowdfunding</div>
+                <button class="plan-action">Get Started</button>
+                <button class="plan-link">Learn more</button>
+            </div>
+            <div class="plan-header">
+                <div class="plan-title">Essential</div>
+                <div class="plan-desc">All the basics for event &amp; team crowdfunding</div>
+                <button class="plan-action">Get Started</button>
+                <button class="plan-link">Learn more</button>
+            </div>
+            <div class="plan-header">
+                <div class="plan-title">Premium</div>
+                <div class="plan-desc">Everything you need to grow your nonprofit</div>
+                <button class="plan-action">Contact Us</button>
+                <button class="plan-link">Learn more</button>
+            </div>
+            <div class="plan-header">
+                <div class="plan-title">Enterprise</div>
+                <div class="plan-desc">Advanced features for scaling your nonprofit</div>
+                <button class="plan-action">Contact Us</button>
+                <button class="plan-link">Learn more</button>
+            </div>
+        </div>
+        <table class="compare-table">
+            <tr>
+                <th>Pricing</th>
+                <th>GoFundMe</th>
+                <th>Essential</th>
+                <th>Premium</th>
+                <th>Enterprise</th>
+            </tr>
+            <tr>
+                <td class="feature-title">Plan cost</td>
+                <td>Free</td>
+                <td>Free</td>
+                <td><button class="plan-link">Contact us</button></td>
+                <td><button class="plan-link">Contact us</button></td>
+            </tr>
+            <tr>
+                <td class="feature-title">Platform fee</td>
+                <td>0%</td>
+                <td>5%</td>
+                <td>3%</td>
+                <td><button class="plan-link">Contact us</button></td>
+            </tr>
+            <tr>
+                <td class="feature-title">Payment processing</td>
+                <td>2.9% + 30c</td>
+                <td>2.9% + 30c</td>
+                <td>2.4% + 30c</td>
+                <td><button class="plan-link">Contact us</button></td>
+            </tr>
+            <tr>
+                <th colspan="5">Features</th>
+            </tr>
+            <tr>
+                <td class="feature-title">Unlimited fundraising campaigns</td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+            </tr>
+            <tr>
+                <td class="feature-title">Easy access to funds</td>
+                <td><span class="check">&#10003;</span></td>
+                <td></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+            </tr>
+            <tr>
+                <td class="feature-title">Mobile optimized</td>
+                <td></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+            </tr>
+            <tr>
+                <td class="feature-title">Basic donor data</td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="feature-title">Team fundraising</td>
+                <td></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="feature-title">Unlimited fundraising events</td>
+                <td></td>
+                <td></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+            </tr>
+            <tr>
+                <td class="feature-title">Comprehensive donor data</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><span class="check">&#10003;</span></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

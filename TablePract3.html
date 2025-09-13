@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pricing Table</title>
+    <style>
+        body {
+            background: linear-gradient(320deg, #e9f1ff 0%, #f8fbff 100%);
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .pricing-table {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 30px;
+            margin: 60px auto;
+            max-width: 1040px;
+        }
+        .plan {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 8px 32px rgba(60, 83, 216, 0.08);
+            width: 300px;
+            padding: 40px 32px 32px 32px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: box-shadow 0.2s;
+        }
+        .plan-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 6px;
+            letter-spacing: .5px;
+            color: #222;
+        }
+        .plan-desc {
+            font-size: 14px;
+            color: #778;
+            margin-bottom: 25px;
+        }
+        .plan-price {
+            font-size: 34px;
+            font-weight: 700;
+            color: #7f59cf;
+            margin-bottom: 3px;
+        }
+        .plan-price.business {
+            color: #ff8153;
+        }
+        .plan-price.enterprise {
+            color: #7f59cf;
+        }
+        .plan-period {
+            font-size: 18px;
+            font-weight: 500;
+            color: #76788a;
+            margin-left: 6px;
+        }
+        .plan-features {
+            margin: 24px 0 30px 0;
+            padding: 0;
+            width: 100%;
+            list-style-type: none;
+        }
+        .plan-features li {
+            font-size: 16px;
+            color: #444;
+            padding: 6px 0;
+            border-bottom: 1px solid #f3f3f3;
+        }
+        .plan-features li:last-child {
+            border-bottom: none;
+        }
+        .plan-button {
+            background: #7f59cf;
+            border: none;
+            outline: none;
+            border-radius: 22px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 12px 38px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.2s;
+        }
+        .plan-button.business {
+            background: #ff8153;
+        }
+        .plan-button.enterprise {
+            background: #7f59cf;
+        }
+        .plan-img {
+            margin-top: 16px;
+            margin-bottom: 16px;
+            width: 98%;
+            min-height: 90px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="pricing-table">
+        <div class="plan">
+            <div class="plan-title">Personal</div>
+            <div class="plan-desc">We Think Ahead</div>
+            <div>
+                <span class="plan-price">$29</span>
+                <span class="plan-period">/month</span>
+            </div>
+            <ul class="plan-features">
+                <li>Mobile-Optimized</li>
+                <li>Free Custom Domain</li>
+                <li>Best Web Hosting</li>
+                <li>Outstanding Support Team</li>
+                <li>Our Happy Customers</li>
+            </ul>
+            <button class="plan-button">READ MORE</button>
+        </div>
+        <div class="plan">
+            <div class="plan-title">Business</div>
+            <div class="plan-desc">Special Offer</div>
+            <div>
+                <span class="plan-price business">$38</span>
+                <span class="plan-period">/month</span>
+            </div>
+            <ul class="plan-features">
+                <li>Mobile-Optimized</li>
+                <li>Free Custom Domain</li>
+                <li>Best Web Hosting</li>
+                <li>Outstanding Support Team</li>
+                <li>Our Happy Customers</li>
+            </ul>
+            <button class="plan-button business">READ MORE</button>
+        </div>
+        <div class="plan">
+            <div class="plan-title">Enterprise</div>
+            <div class="plan-desc">Our Best Solution</div>
+            <div>
+                <span class="plan-price enterprise">$75</span>
+                <span class="plan-period">/month</span>
+            </div>
+            <ul class="plan-features">
+                <li>Mobile-Optimized</li>
+                <li>Free Custom Domain</li>
+                <li>Best Web Hosting</li>
+                <li>Outstanding Support Team</li>
+                <li>Our Happy Customers</li>
+            </ul>
+            <button class="plan-button enterprise">READ MORE</button>
+        </div>
+    </div>
+</body>
+</html>

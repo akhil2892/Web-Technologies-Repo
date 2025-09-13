@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartPhone Survey Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        legend {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>SmartPhone Preferences Survey</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+        <fieldset>
+            <legend>Favorite Smartphone Brand:</legend>
+            <input type="radio" id="apple" name="brand" value="Apple">
+            <label for="apple">Apple</label><br>
+            <input type="radio" id="samsung" name="brand" value="Samsung">
+            <label for="samsung">Samsung</label><br>
+            <input type="radio" id="google" name="brand" value="Google">
+            <label for="google">Google</label><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Preferred Smartphone Features:</legend>
+            <input type="checkbox" id="5g" name="features" value="5G">
+            <label for="5g">5G Connectivity</label><br>
+            <input type="checkbox" id="foldable" name="features" value="Foldable">
+            <label for="foldable">Foldable Screen</label><br>
+            <input type="checkbox" id="stylus" name="features" value="Stylus">
+            <label for="stylus">Stylus Support</label><br>
+        </fieldset><br>
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Table Example</title>
+  <style>
+    body {
+      background: #253046;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #bfc6da;
+      margin: 0;
+    }
+    .nav-bar {
+      background: #212e48;
+      padding: 0 40px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+    .nav-item {
+      color: #bfc6da;
+      font-size: 1em;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      height: 60px;
+    }
+    .nav-item.active {
+      color: #fff;
+      border-bottom: 3px solid #338ee5;
+      padding-bottom: 7px;
+    }
+    .nav-item i {
+      font-size: 1.15em;
+      margin-right: 7px;
+      color: #7fa9ed;
+    }
+    .main-content {
+      padding: 36px 50px 50px 50px;
+    }
+    .section-title {
+      font-size: 1.15em;
+      color: #e7ecf4;
+      font-weight: 600;
+      letter-spacing: .07em;
+      margin-bottom: 22px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 8px;
+      background: #273650;
+      margin-top: 10px;
+      box-shadow: 0 4px 20px rgba(40,66,105,0.14);
+      font-size: 1em;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 15px 16px;
+      text-align: left;
+      font-size: 1em;
+      border-bottom: 1px solid #232a41;
+    }
+    th {
+      background: #212e48;
+      color: #bfc6da;
+      font-weight: 600;
+    }
+    td {
+      background: #273650;
+      color: #bfc6da;
+    }
+    tr.date-header td {
+      color: #6fa6eb;
+      font-weight: bold;
+      background: #253046;
+      border-bottom: none;
+      padding-top: 20px;
+      padding-bottom: 7px;
+      font-size: 1.04em;
+    }
+    .company { color: #8bb2de; }
+    .contact { color: #94d5f6; }
+    .address { color: #96b6f1; font-size: .98em; }
+    .total { color: #ffe683; }
+    .vat { color: #76c2f7; }
+    .revenue { color: #6cd8a4; }
+    .status { color: #e77588; }
+    .finished { color: #3cdd7c; }
+  </style>
+</head>
+<body>
+  <div class="nav-bar">
+    <div class="nav-item active"><i>🏠</i> DASHBOARD</div>
+    <div class="nav-item"><i>👥</i> USERS</div>
+    <div class="nav-item"><i>⚑</i> PRIORITY</div>
+    <div class="nav-item"><i>📦</i> COLLECTIONS</div>
+    <div class="nav-item"><i>📁</i> ARCHIVED</div>
+    <div class="nav-item"><i>🗑</i> DELETED</div>
+    <div class="nav-item"><i>📈</i> TRENDS</div>
+    <div class="nav-item"><i>📝</i> TASKS</div>
+    <div class="nav-item"><i>🔧</i> FILTERS</div>
+    <div class="nav-item"><i>📊</i> STATS</div>
+  </div>
+  <div class="main-content">
+    <div class="section-title">Customer Data Table</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Customer</th>
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Address</th>
+          <th>Revenue</th>
+          <th>VAT</th>
+          <th>Total Price</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="date-header"><td colspan="8">March 2014</td></tr>
+        <tr>
+          <td>IBBP Apps</td>
+          <td class="company">H&R Real</td>
+          <td class="contact">Joshua O'Toole</td>
+          <td class="address">276 Tremont Street, Boston, MA 02118</td>
+          <td class="revenue">$840,742</td>
+          <td class="vat">$12,834</td>
+          <td class="total">$1,240.39</td>
+          <td class="finished">FINISHED</td>
+        </tr>
+        <tr>
+          <td>SRA - General Contacts</td>
+          <td class="company">Great Wes</td>
+          <td class="contact">Eli Ahmad</td>
+          <td class="address">1310 Mission Street, San Francisco, CA 94103</td>
+          <td class="revenue">$112,840</td>
+          <td class="vat">$7,040</td>
+          <td class="total">$312,840</td>
+          <td class="status">WITHDRAWN</td>
+        </tr>
+        <tr>
+          <td>CCST</td>
+          <td class="company">Fording Fli</td>
+          <td class="contact">Dennis Vill</td>
+          <td class="address">San Diego, CA 92138-1796</td>
+          <td class="revenue">$112,483</td>
+          <td class="vat">$4,983</td>
+          <td class="total">$112,483</td>
+          <td class="status">WITHDRAWN</td>
+        </tr>
+        <tr>
+          <td>Accupure</td>
+          <td class="company">CC Imperi</td>
+          <td class="contact">Carlos Ric</td>
+          <td class="address">1219-1223 Vine Street Philadelphia, PA 19107</td>
+          <td class="revenue">$840,742</td>
+          <td class="vat">$12,834</td>
+          <td class="total">$1,240.39</td>
+          <td class="status">ETA</td>
+        </tr>
+        <tr class="date-header"><td colspan="8">April 2014</td></tr>
+        <tr>
+          <td>IBBP Apps</td>
+          <td class="company">Atco Ltd.</td>
+          <td class="contact">Mary Hica</td>
+          <td class="address">4933 W. Craig Rd. Suite 291 Las Vegas, NV 89130</td>
+          <td class="revenue">$845,948</td>
+          <td class="vat">$83,932</td>
+          <td class="total">$1,082.22</td>
+          <td class="finished">FINISHED</td>
+        </tr>
+        <tr>
+          <td>eDiscovery</td>
+          <td class="company">Ensign Ene</td>
+          <td class="contact">Garry Lock</td>
+          <td class="address">Arlington VA 22204</td>
+          <td class="revenue">$23,334</td>
+          <td class="vat">$4,230</td>
+          <td class="total">$123,334</td>
+          <td class="status">WITHDRAWN</td>
+        </tr>
+        <tr>
+          <td>El Tools</td>
+          <td class="company">Fortis Inc.</td>
+          <td class="contact">George Bu</td>
+          <td class="address">1250 Weaver Street, San Diego CA 92114</td>
+          <td class="revenue">$473,843</td>
+          <td class="vat">$38,943</td>
+          <td class="total">$473,843</td>
+          <td class="status">WITHDRAWN</td>
+        </tr>
+        <tr>
+          <td>Accupure</td>
+          <td class="company">Manulife F</td>
+          <td class="contact">Manu Acu</td>
+          <td class="address">1072 Folsom Street, #470 San Francisco, CA 94117</td>
+          <td class="revenue">$232,849</td>
+          <td class="vat">$32,849</td>
+          <td class="total">$232,849</td>
+          <td class="status">WITHDRAWN</td>
+        </tr>
+        <tr class="date-header"><td colspan="8">May 2014</td></tr>
+        <tr>
+          <td>IBBP Apps</td>
+          <td class="company">Great Wes</td>
+          <td class="contact">Eli Ahmad</td>
+          <td class="address">1310 Mission Street, San Francisco, CA 94103</td>
+          <td class="revenue">$112,840</td>
+          <td class="vat">$7,040</td>
+          <td class="total">$312,840</td>
+          <td class="status">WITHDRAWN</td>
+        </tr>
+        <tr>
+          <td>eDiscovery</td>
+          <td class="company">Fording Fli</td>
+          <td class="contact">Dennis Vill</td>
+          <td class="address">San Diego, CA 92138-1796</td>
+          <td class="revenue">$92,833</td>
+          <td class="vat">$4,983</td>
+          <td class="total">$112,483</td>
+          <td class="status">WITHDRAWN</td>
+        </tr>
+        <tr>
+          <td>El Tools</td>
+          <td class="company">CC Imperi</td>
+          <td class="contact">Carlos Ric</td>
+          <td class="address">1219-1223 Vine Street Philadelphia, PA 19107</td>
+          <td class="revenue">$840,742</td>
+          <td class="vat">$12,834</td>
+          <td class="total">$1,240.39</td>
+          <td class="status">ETA</td>
+        </tr>
+        <tr>
+          <td>Accupure</td>
+          <td class="company">Atco Ltd.</td>
+          <td class="contact">Mary Hica</td>
+          <td class="address">4933 W. Craig Rd. Suite 291 Las Vegas, NV 89130</td>
+          <td class="revenue">$845,948</td>
+          <td class="vat">$83,932</td>
+          <td class="total">$1,082.22</td>
+          <td class="finished">FINISHED</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

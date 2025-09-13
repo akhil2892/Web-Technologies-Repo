@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product - Management Table</title>
+  <style>
+    body {
+      background: #23294b;
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #fff;
+      min-height: 100vh;
+    }
+    .main-header {
+      font-size: 2em;
+      font-weight: 400;
+      margin-left: 32px;
+      margin-top: 24px;
+      color: #e1e8fa;
+      margin-bottom: 0;
+    }
+    .main-header b {
+      color: #fff;
+      font-weight: 700;
+    }
+    .card {
+      background: linear-gradient(108deg, #1e2352 0%, #23294b 100%);
+      border-radius: 14px;
+      max-width: 1250px;
+      margin: 36px auto 0 auto;
+      padding: 34px 32px 34px 32px;
+      box-shadow: 0 8px 32px rgba(60,83,216,0.14);
+      position: relative;
+    }
+    .section-title {
+      font-size: 1.15em;
+      color: #e1e8fa;
+      margin-bottom: 18px;
+      font-weight: 500;
+    }
+    .create-btn {
+      background: #36d370;
+      color: #fff;
+      border: none;
+      border-radius: 7px;
+      padding: 10px 32px;
+      font-size: 1em;
+      font-weight: 500;
+      margin-bottom: 28px;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(54,211,112,0.16);
+      letter-spacing: .2px;
+    }
+    .search-box {
+      float: right;
+      background: #181b31;
+      color: #cdd7f4;
+      padding: 13px 18px;
+      border-radius: 7px;
+      border: none;
+      font-size: 1em;
+      margin-top: -60px;
+      margin-bottom: 44px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 22px;
+      font-size: 1em;
+    }
+    th, td {
+      text-align: left;
+      padding: 18px 15px;
+      border-bottom: 1px solid #23294b;
+      font-size: 1em;
+      color: #d7def1;
+    }
+    th {
+      background: #16193b;
+      color: #bfc6da;
+      font-weight: 600;
+      letter-spacing: .3px;
+    }
+    tr {
+      background: transparent;
+    }
+    tr:nth-child(even) {
+      background: #22274a;
+    }
+    .title-link {
+      color: #4ca3fd;
+      text-decoration: none;
+      font-weight: 500;
+      letter-spacing: .4px;
+    }
+    .subtitle {
+      color: #a8b5df;
+      font-size: .98em;
+    }
+    .price {
+      color: #36d370;
+      font-weight: 500;
+    }
+    .rating {
+      color: #ffb450;
+      font-weight: 600;
+      font-size: 1.07em;
+    }
+    .star {
+      margin-left: 3px;
+      color: #ffb450;
+      font-size: 1.17em;
+      vertical-align: middle;
+    }
+    .api-btn {
+      padding: 7px 20px;
+      border-radius: 6px;
+      border: none;
+      font-size: 1em;
+      font-weight: 500;
+      margin-right: 9px;
+      cursor: pointer;
+      outline: none;
+      box-shadow: none;
+    }
+    .edit {
+      background: #2871fa;
+      color: #fff;
+    }
+    .delete {
+      background: #fa504a;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h2 class="main-header">Product - <b>Management</b></h2>
+  <div class="card">
+    <div class="section-title">List of Products</div>
+    <button class="create-btn">Create Product</button>
+    <input type="text" class="search-box" placeholder="Search" />
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>TITLE</th>
+          <th>SUBTITLE</th>
+          <th>PRICE($)</th>
+          <th>RATING</th>
+          <th>API</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td><a class="title-link" href="#">Trainers</a></td>
+          <td class="subtitle">Trainers In White</td>
+          <td class="price">76</td>
+          <td class="rating">4.6 <span class="star">&#9733;</span></td>
+          <td>
+            <button class="api-btn edit">Edit</button>
+            <button class="api-btn delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><a class="title-link" href="#">Boots</a></td>
+          <td class="subtitle">Trainers In Blue</td>
+          <td class="price">45</td>
+          <td class="rating">4.6 <span class="star">&#9733;</span></td>
+          <td>
+            <button class="api-btn edit">Edit</button>
+            <button class="api-btn delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><a class="title-link" href="#">Flat sandals</a></td>
+          <td class="subtitle">Trainers In White</td>
+          <td class="price">55</td>
+          <td class="rating">4.6 <span class="star">&#9733;</span></td>
+          <td>
+            <button class="api-btn edit">Edit</button>
+            <button class="api-btn delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><a class="title-link" href="#">Trainers</a></td>
+          <td class="subtitle">Trainers In White</td>
+          <td class="price">76</td>
+          <td class="rating">4.6 <span class="star">&#9733;</span></td>
+          <td>
+            <button class="api-btn edit">Edit</button>
+            <button class="api-btn delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><a class="title-link" href="#">Boots</a></td>
+          <td class="subtitle">Trainers In Blue</td>
+          <td class="price">45</td>
+          <td class="rating">4.6 <span class="star">&#9733;</span></td>
+          <td>
+            <button class="api-btn edit">Edit</button>
+            <button class="api-btn delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td><a class="title-link" href="#">Flat sandals</a></td>
+          <td class="subtitle">Trainers In White</td>
+          <td class="price">55</td>
+          <td class="rating">4.6 <span class="star">&#9733;</span></td>
+          <td>
+            <button class="api-btn edit">Edit</button>
+            <button class="api-btn delete">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
