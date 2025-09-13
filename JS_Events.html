@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript Event Demo</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #f0f8ff; /* aliceblue */
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        button, input {
+            margin: 8px;
+            padding: 8px 12px;
+            font-size: 14px;
+        }
+        #hoverBar {
+            width: 150px;
+            height: 150px;
+            background: lightblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body onload="alert('Page loaded!')">
+
+    <h1>Javascript Events</h1>
+
+    <section>
+        <h2>Mouse Events</h2>
+        
+        <button onclick="alert('Button clicked!')">Click me</button>
+        
+        <button ondblclick="alert('Button double clicked!')">Double Click Me</button>
+        
+        <div id="hoverBar" 
+             onmouseover="this.style.background='orange'" 
+             onmouseout="this.style.background='lightblue'">
+            Hover me
+        </div>
+    </section>
+
+    <section>
+        <h3>Keyboard Events</h3>
+        
+        <input type="text" id="keyInput" placeholder="Type something" 
+               onkeydown="document.getElementById('keyOutput').innerText = 'Key Down'">
+        
+        <p id="keyOutput"></p>
+    </section>
+
+</body>
+</html>

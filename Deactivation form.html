@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Account Deactivation Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f7;
+            color: #333;
+        }
+        fieldset {
+            width: 400px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: white;
+        }
+        legend {
+            color: blue;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="radio"],
+        input[type="checkbox"],
+        textarea {
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: lightseagreen;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 align="center">Deactivate Your Account</h2>
+
+    <form action="#" align="center">
+
+        <fieldset>
+            <legend><b>Personal Details</b></legend>
+            Full Name:<br>
+            <input type="text" name="name" size="35" required><br><br>
+
+            Email Address:<br>
+            <input type="email" name="email" size="35" required>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend><b>Why are you leaving?</b></legend>
+            <input type="radio" name="reason" value="Not Useful"> Platform is not useful to me<br>
+            <input type="radio" name="reason" value="Privacy Concerns"> Privacy concerns<br>
+            <input type="radio" name="reason" value="Too Many Emails"> Too many emails/notifications<br>
+            <input type="radio" name="reason" value="Another Account"> I have another account<br>
+            <input type="radio" name="reason" value="Other"> Other
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend><b>Other contributing factors (select all that apply):</b></legend>
+            <input type="checkbox" name="factors" value="Job Change"> Job change<br>
+            <input type="checkbox" name="factors" value="Content Quality"> Low quality content<br>
+            <input type="checkbox" name="factors" value="Harassment"> Harassment or abuse<br>
+            <input type="checkbox" name="factors" value="Too Much Time"> Takes too much of my time
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend><b>Additional comments</b></legend>
+            <textarea name="comments" rows="4" cols="40" placeholder="Let us know if there's something we can improve..."></textarea>
+        </fieldset>
+        <br>
+
+        <input type="submit" value="Deactivate Account">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>

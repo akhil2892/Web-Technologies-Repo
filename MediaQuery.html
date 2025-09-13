@@ -1,0 +1,78 @@
+<!--simple html code to demonstrate media queries(print,screen)-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Webpage</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: aliceblue;
+            color: black; 
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            padding: 20px;
+        }
+
+        article {
+            flex: 3;
+            padding: 10px;
+            background: lightblue;
+        }
+
+        aside {
+            flex: 1;
+            padding: 10px;
+            background: lightyellow;
+        }
+
+        footer {
+            text-align: center;
+            background: grey;
+            color: white;
+            padding: 10px;
+        }
+
+        /* Media query for smaller screens */
+        @media screen and (max-width: 600px) {
+            main {
+                flex-direction: column;
+            }
+        }
+
+        /* Media query for printing */
+        @media print {
+            header, footer, aside {
+                display: none;
+            }
+            article {
+                background: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>This is the Webpage</h1>
+    </header>
+    <main>
+        <article>
+            <p>This is the main Content area. Shrink the window or print this page to see media queries in action.</p>
+        </article>
+        <aside>
+            <p>This is a Sidebar area.</p>
+        </aside>
+    </main>
+    <footer>
+        <p>Footer Section</p>
+    </footer>
+</body>
+</html>
